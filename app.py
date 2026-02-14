@@ -42,9 +42,14 @@ pet_len = st.number_input('Petal Length', min_value=0.0, step=0.1, value=1.4)
 pet_width = st.number_input('Petal Width', min_value=0.0, step=0.1, value=0.2)
 
 if st.button("Predict"):
+<<<<<<< HEAD
    scaler_path='scaler.pkl'
 model_path='model.pkl'
 
+=======
+    scaler_path = "scaler.pkl"
+    model_path = "model.pkl"
+>>>>>>> 68a6a07 (app completed)
 
     pred, max_prob = predict_species(
         sep_len, sep_width, pet_len, pet_width,
